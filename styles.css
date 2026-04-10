@@ -1,13 +1,14 @@
-body{
+body {
     background-color: aliceblue;
     /* font-family: 'Noto Sans', sans-serif; */
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     font-family: "Poppins", sans-serif;
     font-weight: 900;
@@ -23,67 +24,113 @@ nav li a {
     transition: all;
     transition-duration: 500ms;
 }
-nav li a:hover{
+
+nav li a:hover {
     text-decoration: none;
     color: rgb(66, 50, 80);
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     margin: 0 23px;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-div.logo{
+div.logo {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 23px;
+    font-size: 23px;
 }
 
-.container{
+.container {
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
-    background-color: rgb(184, 166, 201);
+    background-color: aliceblue;
     max-width: 80vw;
     margin: auto;
-    }
-.container h1,h2{
+}
+
+.container h1,
+h2 {
     margin: 23px 0;
 }
-.container form{
+
+.container form {
     display: flex;
     flex-direction: column;
 }
-.container form input[type="number"],select{
+
+.container form input[type="number"],
+select {
     font-size: 25px;
     margin-bottom: 23px;
     width: 23vw;
 }
-.container form label{
+
+.container form label {
     font-size: 25px;
 }
-.btn{
+
+.btn {
     width: 144px;
     padding: 5px 8px;
     font-size: 20px;
     border-radius: 10px;
     background-color: rgb(181, 146, 212);
-    cursor:pointer;
+    cursor: pointer;
 }
-.output table{
+
+.output table {
     width: 50vw;
     text-align: center;
     border: 2px solid black;
     font-size: 20px;
     /* display: none; */
 }
-.output{
+
+.output table th{
+    padding: 3px;
+}
+
+.output {
     display: none;
 }
-footer{
+
+@media (max-width:600px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 13px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 80vw;
+    }
+
+    .container form input[type="number"],
+    select {
+        width: 80vw;
+    }
+
+}
+
+footer {
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
 }
