@@ -24,16 +24,55 @@
     <div class="container">
         <h1>Choose a currency to convert</h1>
         <form action="action.php" method="get">
+            <label for="quantity">Choose a quantity : </label>
+            <input type="number" name="quantity" min="1" max="10">
             <label for="currency">Choose a currency : </label>
         <select name="currency">
             <option value="INR">Indian Rupee</option>
             <option value="USD">US Dollar</option>
             <option value="EUR">Europe</option>
         </select>
-        <input type="number" name="quantity" min="1" max="10">
 
-        <input type="submit" value="Submit" />
+        <button type="submit" class="btn">Submit</button>
+        
+
+        <!-- <input type="submit" value="Submit" /> -->
         </form>
+        <divc class="output">
+            <h2>Here is your converted values in different currencies</h2>
+            <table>
+  <!-- <caption>Converted Currency Table</caption> -->
+
+  <thead>
+    <tr>
+      <th>Currency</th>
+      <th>Currency Code</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>Data1</td>
+      <td>Data2</td>
+      <td>Data2</td>
+    </tr>
+    <tr>
+      <td>Data1</td>
+      <td>Data2</td>
+      <td>Data2</td>
+    </tr>
+  </tbody>
+
+  <tfoot>
+    <tr>
+      <td>&nbsp;</td>
+      <td>Data</td>
+      <td>Data</td>
+    </tr>
+  </tfoot>
+</table>
+        </div>
     </div>
 
     <footer>
