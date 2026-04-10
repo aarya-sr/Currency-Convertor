@@ -46,7 +46,24 @@ div.logo{
 .container{
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
+    background-color: rgb(164, 138, 189);
+    max-width: 80vw;
+    margin: auto;
     }
+.container h1{
+    text-align: center;
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+}
+.container form input[type="number"],select{
+    font-size: 25px;
+    margin-bottom: 23px;
+}
+.container form label{
+    font-size: 25px;
+}
 footer{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;

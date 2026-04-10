@@ -22,10 +22,18 @@
     </nav>
 
     <div class="container">
-        <form>
-            
-        </form>
+        <h1>Choose a currency to convert</h1>
+        <form action="action.php" method="get">
+            <label for="currency">Choose a currency : </label>
+        <select name="currency">
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">US Dollar</option>
+            <option value="EUR">Europe</option>
+        </select>
+        <input type="number" name="quantity" min="1" max="10">
 
+        <input type="submit" value="Submit" />
+        </form>
     </div>
 
     <footer>
